@@ -1,0 +1,15 @@
+{
+  "name": "flash-forward-reactive",
+  "version": "0.1.0",
+  "description": "Flash-era inspired reactive audio visualizer with real-time mood analysis and lighting output bridges.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}
