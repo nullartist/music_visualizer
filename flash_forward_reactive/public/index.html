@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Forward Reactive</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="controls">
+        <h1>Flash Forward Reactive</h1>
+        <p>
+          Real-time audio mood + instrument energy tracking for old-school flash visuals and
+          modern lighting protocols (DMX, ArtNet, KiNET, ESP32).
+        </p>
+
+        <div class="buttons">
+          <button id="micBtn">Use Microphone</button>
+          <label class="file-upload">
+            Upload Audio
+            <input type="file" id="fileInput" accept="audio/*" />
+          </label>
+          <button id="playBtn" disabled>Play Uploaded Audio</button>
+        </div>
+
+        <dl class="metrics">
+          <div><dt>Mood</dt><dd id="mood">-</dd></div>
+          <div><dt>Tempo (BPM)</dt><dd id="tempo">-</dd></div>
+          <div><dt>Energy</dt><dd id="energy">-</dd></div>
+          <div><dt>Brightness</dt><dd id="brightness">-</dd></div>
+        </dl>
+      </section>
+
+      <canvas id="scene" width="1280" height="720"></canvas>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
